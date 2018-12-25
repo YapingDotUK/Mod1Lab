@@ -79,7 +79,13 @@ Layout Styles
     padding-right: 15px;
 }
 
-/* Media Query excludes extra small devices and includes small and above */
+/* Media Query excludes extra small devices 
+and includes small and above */
+
+/*to prevent div elements horizontal 
+    clappsed on other div
+    which has no contents, set the div 
+    minmum height 1px*/
 @media (min-width: 48em) {
     [class*='col-'] {
         float: left;
@@ -108,6 +114,8 @@ Layout Styles
     .col-1-6 {
         width: 16.6666%;
     }
+   
+    /*add a white horizontal line after a div*/
     .h_line::after {
         width: 100%;
         height: 1px;
